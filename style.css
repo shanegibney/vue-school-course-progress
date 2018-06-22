@@ -1,0 +1,18 @@
+.success{
+  text-align: center;
+}
+/* td{
+  text-align: center;
+} */
+.bold {
+    font-weight: bold;
+}
+th{
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 10px;
+}
+td{
+  border-right: 1px solid lightgray;
+  padding: 10px;
+}

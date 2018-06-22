@@ -1,0 +1,353 @@
+[{
+  "module": "Getting Started ",
+  "videos": [{
+      "title": "What do I need?",
+      "time": "01:44"
+    },
+    {
+      "title": "Get started with the mighty Vue CLI",
+      "time": "03:11"
+    },
+    {
+      "title": "Scaffold your project with Vue CLI",
+      "time": "03:55"
+    },
+    {
+      "title": "Explore the Webpack template",
+      "time": "03:34"
+    },
+    {
+      "title": "Automatic Code Review, Linting with ESLint",
+      "time": "07:05"
+    }
+  ]
+}, {
+  "module": "Application Structure",
+  "videos": [{
+      "title": "Structuring our data",
+      "time": "06:25"
+    },
+    {
+      "title": "Import data source and show the conversations",
+      "time": "03:57"
+    },
+    {
+      "title": "Vue.js with a Theme and Scoped CSS Styling",
+      "time": "09:53"
+    }
+  ]
+}, {
+  "module": "Routing",
+  "videos": [{
+      "title": "Introducing the vue-router",
+      "time": "06:42"
+    },
+    {
+      "title": "Components, Props and Computed Properties",
+      "time": "11:31"
+    },
+    {
+      "title": "Router Links",
+      "time": "02:32"
+    },
+    {
+      "title": "Organizing the Components",
+      "time": "04:12"
+    },
+    {
+      "title": "Handling not found pages",
+      "time": "02:28"
+    },
+    {
+      "title": "CSS Modules with Webpack",
+      "time": "04:30"
+    }
+  ]
+}, {
+  "module": "Organizing the Application",
+  "videos": [{
+      "title": "Tidy up a messy component",
+      "time": "05:55"
+    },
+    {
+      "title": "Arrow Functions",
+      "time": "02:11"
+    },
+    {
+      "title": "Let the discussion begin!",
+      "time": "10:48"
+    },
+    {
+      "title": "Communicate between components",
+      "time": "06:03"
+    },
+    {
+      "title": "Destructuring JavaScript Arrays and Objects",
+      "time": "05:34"
+    },
+    {
+      "title": "Human Friendly Dates",
+      "time": "05:53"
+    }
+  ]
+}, {
+  "module": "Forum Logic",
+  "videos": [{
+      "title": "Base Components",
+      "time": "04:25"
+    },
+    {
+      "title": "Global Base Components",
+      "time": "05:54"
+    },
+    {
+      "title": "Organize threads in forums",
+      "time": "05:43"
+    },
+    {
+      "title": "Forum Components",
+      "time": "05:11"
+    },
+    {
+      "title": "Categories, Collections of Forums",
+      "time": "07:28"
+    }
+  ]
+}, {
+  "module": "Vuex State Management",
+  "videos": [{
+      "title": "Migrating to Vuex",
+      "time": "05:27"
+    },
+    {
+      "title": "Creating Posts using Vuex",
+      "time": "05:37"
+    },
+    {
+      "title": "The NavBar",
+      "time": "02:39"
+    },
+    {
+      "title": "Grabbing the Authenticated User",
+      "time": "02:14"
+    },
+    {
+      "title": "User Profile Page",
+      "time": "05:24"
+    },
+    {
+      "title": "Utility to Count Object Properties",
+      "time": "03:31"
+    },
+    {
+      "title": "JavaScript: By Reference vs By Value",
+      "time": "03:22"
+    },
+    {
+      "title": "Update a User Profile",
+      "time": "06:43"
+    },
+    {
+      "title": "Shared Page Components",
+      "time": "03:00"
+    },
+    {
+      "title": "Use authId when Creating Posts",
+      "time": "02:25"
+    }
+  ]
+}, {
+  "module": "Forum Threads",
+  "videos": [{
+      "title": "Create New Threads",
+      "time": "02:22"
+    },
+    {
+      "title": "Actions and Mutations",
+      "time": "07:37"
+    },
+    {
+      "title": "Add the Route",
+      "time": "02:29"
+    },
+    {
+      "title": "Redirect on Publish",
+      "time": "02:10"
+    },
+    {
+      "title": "Use Route Params",
+      "time": "01:35"
+    },
+    {
+      "title": "ThreadEditor",
+      "time": "02:32"
+    },
+    {
+      "title": "Edit Threads",
+      "time": "05:08"
+    },
+    {
+      "title": "Improve the ThreadEditor",
+      "time": "03:38"
+    }
+  ]
+}, {
+  "module": "Forum Posts",
+  "videos": [{
+      "title": "Editing Posts",
+      "time": "07:30"
+    },
+    {
+      "title": "Conditionally display multiple elements with an invisible wrapper",
+      "time": "01:33"
+    },
+    {
+      "title": "Post Editor Buttons",
+      "time": "01:12"
+    },
+    {
+      "title": "Vue.js Custom Prop Validation",
+      "time": "03:08"
+    },
+    {
+      "title": "Has the post been modified?",
+      "time": "03:12"
+    }
+  ]
+}, {
+  "module": "Higher Order Functions",
+  "videos": [{
+      "title": "What is a Higher Order Function?",
+      "time": "04:33"
+    },
+    {
+      "title": "Creating Dynamic Vuex Getters using Higher Order Functions",
+      "time": "05:17"
+    },
+    {
+      "title": "Create Vuex Mutations with Higher Order Functions",
+      "time": "04:56"
+    },
+    {
+      "title": "Filter Array Elements to Count Unique Contributors",
+      "time": "04:50"
+    },
+    {
+      "title": "Small Improvements Before the Firebase Chapter",
+      "time": "01:18"
+    }
+  ]
+}, {
+  "module": "Firebase Real-Time Database",
+  "videos": [{
+      "title": "Install Firebase Realtime Database",
+      "time": "02:48"
+    },
+    {
+      "title": "Set up the Firebase Realtime Database",
+      "time": "01:12"
+    },
+    {
+      "title": "Understanding the Vue.js Lifecycle Hooks",
+      "time": "04:22"
+    },
+    {
+      "title": "Start Migrate Vuex to use Firebase Realtime Database",
+      "time": "07:06"
+    },
+    {
+      "title": "Fetch Data from Firebase With Vuex Actions",
+      "time": "03:40"
+    },
+    {
+      "title": "Reusable Vuex Actions and Mutations",
+      "time": "03:51"
+    },
+    {
+      "title": "Vuex Actions that Fetches Multiple Items from Firebase",
+      "time": "03:19"
+    },
+    {
+      "title": "Fetch Firebase Data Before Creating Component Instance",
+      "time": "03:48"
+    },
+    {
+      "title": "Fetch Data for All Pages",
+      "time": "05:12"
+    },
+    {
+      "title": "Clean up Components by Mapping our Vuex Actions",
+      "time": "03:29"
+    },
+    {
+      "title": "Split Vuex Store into Multiple Files",
+      "time": "02:40"
+    },
+    {
+      "title": "Fetch Data Before Creating the Vue Instance",
+      "time": "02:13"
+    },
+    {
+      "title": "Store New Posts in Firebase with Vuex",
+      "time": "03:58"
+    },
+    {
+      "title": "Store New Threads in Firebase with Vuex",
+      "time": "04:31"
+    },
+    {
+      "title": "Counting Thread Contributors",
+      "time": "01:49"
+    },
+    {
+      "title": "Updating posts in Firebase Realtime Database",
+      "time": "01:41"
+    },
+    {
+      "title": "Update threads in Firebase Realtime Database",
+      "time": "01:52"
+    }
+  ]
+}, {
+  "module": "Loading Indicators when Fetching Async Data",
+  "videos": [{
+      "title": "Hide Content Until Data is Fully Loaded",
+      "time": "02:01"
+    },
+    {
+      "title": "Share Logic Between Components with Mixins",
+      "time": "05:26"
+    },
+    {
+      "title": "Display a Loading Indicator while Components Fetch Async Data",
+      "time": "06:10"
+    },
+    {
+      "title": "Show a Cool Loading Spinner While Components Fetch Data",
+      "time": "01:22"
+    },
+    {
+      "title": "Show a Progress Bar while Components Fetch Asynchronous Data",
+      "time": "02:35"
+    }
+  ]
+}, {
+  "module": "Workflow Improvements",
+  "videos": [{
+      "title": "The Firebase Tools (CLI)",
+      "time": "02:54"
+    },
+    {
+      "title": "Create Custom NPM script To Seed Database",
+      "time": "02:25"
+    },
+    {
+      "title": "Using Environment Variables in the Vue.js Webpack Template",
+      "time": "03:28"
+    },
+    {
+      "title": "Using .env file in the Vue.js Webpack Template",
+      "time": "04:42"
+    }
+  ]
+}]
