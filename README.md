@@ -1,10 +1,8 @@
-# Course Progression
+# Vue School Course Progression
 
-While doing the vueschool master class I wanted to know how much of the course I still had to complete.
+While doing the [vueschool master](https://vueschool.io/courses/the-vuejs-master-class) class I wanted to know how much of the course I still had to complete.
 
-This project shows the course progression: percentage of course completed by duration of each video.
-
-Also total number of videos and time.
+This project shows the course progression by the accumulated time for each video and percntage of time and accumulated percentage of time for each stage of the course.
 
 All data was put into a JSON file for easy access.
 
