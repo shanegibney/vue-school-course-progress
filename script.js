@@ -12,7 +12,7 @@ function readTextFile(file, callback) {
 var table = document.getElementById("table")
 // var header = table.createTHead();
 // var row = header.insertRow(0);
-var array = ["Title", "Duration", "Accumulate Time", "Accumulated Percentage", "Percentage for Each"];
+var array = ["Title", "Duration", "Accumulate Time", "Percentage for Each", "Accumulated Percentage"];
 // for (var i = 0; i < array.length; i++) {
 //   var cell = row.insertCell(i);
 //   cell.innerHTML = array[i];
@@ -61,10 +61,62 @@ readTextFile("data.json", function(text) {
   var s = 0;
   var ms = 0;
   var scs = 0;
+  var scsmod = 0;
+  var msmod = 0;
   var total = 0;
   var thisisecs = 0;
   var num = 1;
   var hours = 0;
+  var moduleArray = [];
+
+  data.forEach(function(e, index) {
+    e.videos.forEach(function(el, num) {
+      var m = el.time[0] + el.time[1];
+      m = +m;
+      var s = el.time[3] + el.time[4];
+      s = +s;
+      ms = m * 60;
+      scsmod += (ms + s);
+      console.log("num:" + num + ", e.videos.length" + e.videos.length);
+      if (num == e.videos.length - 1) {
+        console.log("num=videos.lengh");
+        moduleArray.push(scsmod);
+        console.log("moduleArray: " + moduleArray);
+        scsmod = 0;
+      }
+    })
+  });
+  var newModuleArray = [];
+  //convert moduleArray[]which is seconds to hh:mm:ss
+  moduleArray.forEach(function(e, num) {
+    moduleTotalTime = converttotime(e);
+    newModuleArray.push(moduleTotalTime);
+  })
+
+  function converttotime(secs) {
+    var sec = secs % 60;
+    var mins = (secs - sec) / 60;
+    if (sec < 10) {
+      sec = "0" + sec;
+    }
+
+    var mi = mins % 60; //the extra mins
+    var hours = (mins - mi) / 60;
+    mins = mi;
+    if (mins < 10) {
+      mins = "0" + mins;
+    }
+
+    if (hours < 10) {
+      hours = "0" + hours;
+    }
+    return hours + ":" + mins + ":" + sec;
+  }
+
+
+
+
+
 
   data.forEach(function(e, index) {
     e.videos.forEach(function(el, num) {
@@ -74,10 +126,14 @@ readTextFile("data.json", function(text) {
       s = +s;
       ms = m * 60;
       scs += (ms + s);
-      console.log("scs: " + scs);
+      // console.log("scs: " + scs);
       total = scs;
     })
+    //total duration by module
+    // console.log("el.length: " + e.videos.length);
+    // moduleArray.push(e.videos.length);
   });
+  console.log(moduleArray);
 
   data.forEach(function(e, index) {
 
@@ -102,7 +158,7 @@ readTextFile("data.json", function(text) {
     // console.log(e.length);
     var tr = document.createElement("tr");
     var td = document.createElement("td");
-    var txt = document.createTextNode(e.module);
+    var txt = document.createTextNode(e.module + " " + newModuleArray[index]);
 
     td.classList.add("bold");
     td.appendChild(txt);
@@ -203,6 +259,13 @@ readTextFile("data.json", function(text) {
       var percent = ((thissecs / total) * 100).toFixed(2); //needs one cecimal place
       // num.toFixed(2);
       // console.log(Math.floor(5.95));
+
+      td = document.createElement("td");
+      td.classList.add("success");
+      txt = document.createTextNode(percent + "%");
+      td.appendChild(txt);
+      tr.appendChild(td);
+
       td = document.createElement("td");
       td.classList.add("success");
       txt = document.createTextNode(percentage + "%");
@@ -210,11 +273,7 @@ readTextFile("data.json", function(text) {
       tr.appendChild(td);
 
 
-      td = document.createElement("td");
-      td.classList.add("success");
-      txt = document.createTextNode(percent + "%");
-      td.appendChild(txt);
-      tr.appendChild(td);
+
     });
     table.appendChild(tbody);
 
