@@ -158,7 +158,7 @@ readTextFile("data.json", function(text) {
     // console.log(e.length);
     var tr = document.createElement("tr");
     var td = document.createElement("td");
-    var txt = document.createTextNode(e.module + " " + newModuleArray[index]);
+    var txt = document.createTextNode(e.module + " (" + newModuleArray[index] + ")");
 
     td.classList.add("bold");
     td.appendChild(txt);
